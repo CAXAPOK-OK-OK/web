@@ -5,6 +5,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--<style>
+    li{
+      color:red;
+    }
+  </style>-->
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
   <title>Макет 5</title>
 </head>
 
@@ -17,9 +27,9 @@
     <button><img src="/" alt="меню"></button>
   </header>
   <main>
-    <section>
+    <section class="class-color1">
       <h1>VOLUNTEERS</h1>
-      <p>Make magical math moments in your community.</p>
+      <p id="id-make-magical">Make magical math moments in your community.</p>
       <p>
         Mathopolis relies on volunteers to help create magical math moments for
         kids. We have a number of ways to get involved, from playing math
@@ -28,69 +38,73 @@
       <!--<a href="#"> </a>-->
       <img src="/" alt="">
     </section>
-    <section>
-      <h2>Testimonials</h2>
+    <section class="class-color2">
+      <h2 class="Testimonials">Testimonials</h2>
       <blockquote>
-        <p>I am a biochemist, but I loved helping students explore a logic puzzle about a pirate captain and crew
+        <p class="class-center">I am a biochemist, but I loved helping students explore a logic puzzle about a pirate
+          captain and crew
           (complete
           with pirate hats).</p>
       </blockquote>
-      <p>David H.</p>
-      <p>Festival Volunteer</p>
-      <ol>
-        <li><label><input type="radio" name="text1">text</label></li>
-        <li><label><input type="radio" name="text2">text</label></li>
-        <li><label><input type="radio" name="text3">text</label></li>
+      <p class="class-david">David H.</p>
+      <p class="class-david" id="david-2">Festival Volunteer</p>
+      <ol class="button-null">
+        <!--<li><label><input type="radio" name="text">text1</label></li>
+        <li><label><input type="radio" name="text">text2</label></li>
+        <li><label><input type="radio" name="text">text3</label></li>-->
+        <li></li><button></button>
+        <li></li><button></button>
+        <li></li><button></button>
       </ol>
       <!--<input type="text" name="David">-->
     </section>
     <section>
       <img src="/" alt="">
-      <h2>Lead an Activity</h2>
-      <p>Play a puzzle with kids at a virtual math circle or in-person festival. Volunteers lead our puzzles by
+      <h2 class="lead">Lead an Activity</h2>
+      <p>Play a puzzle with kids at a virtual math circle or in-person festival. Volunteers lead our
+        puzzles by
         encouraging
         independent exploration and asking strategic questions to help with deeper thinking.</p>
-      <button>ATTEND A WORKSHOP</button>
+      <button class="button-attend">ATTEND A WORKSHOP</button>
     </section>
-    <section>
+    <section class="class-color3">
       <img src="/" alt="">
-      <h2>Run a Classroom Visit</h2>
-      <p>Lead virtual classroom visits in your neighborhood elementary or middle school. We train volunteers (including
-        high
-        school and college students) on how to manage this virtual outreach activity. The only thing you need to bring
-        is an
-        open mind and the desire to bring fun math into a kid’s life.</p>
+      <h2 class="class-white" id="run">Run a Classroom Visit</h2>
+      <p class="class-white">Lead virtual classroom visits in your neighborhood elementary or middle school. We train
+        volunteers (including high school and college students) on how to manage this virtual outreach activity. The
+        only thing you need to bring is an open mind and the desire to bring fun math into a kid’s life.</p>
     </section>
     <section>
       <img src="/" alt="">
       <h2>Host a Festival</h2>
-      <p>A math festival is a one-time event where children gather and explore math through puzzles. Our festivals are
+      <p class="math-p">A math festival is a one-time event where children gather and explore math through puzzles. Our
+        festivals are
         hosted by volunteers who want to connect the children in their community with a joyful math experience. We have
         all the resources you need to host a festival. </p>
       <!--<button>learn more</button>-->
       <form action="#">
-        <button>learn more</button>
+        <button class="learn-more-button">learn more</button>
       </form>
     </section>
   </main>
-  <footer>
-    <img src="/" alt="На главную">
-    <p>We're a fiscally-sponsored project of a 501(c)3, Social and Environmental Entrepreneurs.</p>
-    <ul>
+  <footer class="class-color4">
+    <img src="image_2022-11-09_19-31-04.png" alt="На главную" height="172" width="345">
+    <p class="final-text">We're a fiscally-sponsored project of a 501(c)3, Social and Environmental Entrepreneurs.</p>
+    <ul class="li-left">
       <li><a href="#">STUDENTS</a></li>
       <li><a href="#">PARENTS</a></li>
       <li><a href="#">TEACHERS</a></li>
       <li><a href="#">Volunteers</a></li>
       <li><a href="#">EVENTS</a></li>
     </ul>
-    <ul>
+    <ul class="li-right">
       <li><a href="#">PUZZLES</a></li>
       <li><a href="#">ABOUT</a></li>
       <li><a href="#">NEWS</a></li>
       <li><a href="#">STORE</a></li>
       <li><a href="#">DONATE</a></li>
     </ul>
-    <p>Follow us:</p>
+    <p class="class-center">Follow us:</p>
     <ul>
       <li><a href="#"><img src="/" alt="twitter"></a>
       </li>
@@ -103,8 +117,8 @@
       <li><a href="#"><img src="/" alt="youtube"></a>
       </li>
     </ul>
-    <button>SUPPORT OUR CAUSE</button>
-    <p>© 2007–2022 Mathopolis</p>
+    <button class="button-support">SUPPORT OUR CAUSE</button>
+    <p class="class-c">© 2007–2022 Mathopolis</p>
   </footer>
 </body>
 
