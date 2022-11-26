@@ -1,12 +1,15 @@
 :root {
   font-size: 62.5%;
-  /*line-height: 62.5%;*/
+    font-weight: 500;
   font-family: 'Work Sans', sans-serif;
   --primary-color: #2A2A2A;
   --primary-color2: #FFFFFF;
-  background-color: #FFFFFF;
+  --primary-color3: #74C5FF;
+  --primary-color4: #FF6D8D;
+  --primary-color5: #2580C1;
+  --primary-color6: #FFF2D6;
+  --primary-color7:#6A19F5;
   box-sizing: border-box;
-  width: 100%;
 }
 
 * ::after,
@@ -16,12 +19,12 @@
 }
 
 .class-color1 {
-  background-color: #74C5FF;
+  background-color: var(--primary-color3)
   height: 81.5em;
 }
 
 .class-color2 {
-  background-color: #FF6D8D;
+  background-color: var(--primary-color4);
   height: 54.3rem;
 }
 
@@ -31,7 +34,7 @@
 }
 
 .class-color3 {
-  background-color: #2580C1;
+  background-color: var(--primary-color5);
   /* margin-top: 80rem; */
   margin-bottom: 81.3rem;
   height: 73.4rem;
@@ -44,7 +47,7 @@
 }
 
 .class-color4 {
-  background-color: #FFF2D6;
+  background-color: var(--primary-color6);
   height: 90.1rem;
 }
 
@@ -62,7 +65,7 @@
   border-radius: 0.5rem;
   width: 34.5rem;
   height: 5rem;
-  background-color: #6A19F5;
+  background-color: var(--primary-color7);
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 
@@ -72,17 +75,6 @@
   font-size: 1.6rem;
   margin-bottom: 3rem;
   margin-top: 3rem;
-}
-
-.button-null {
-  font-weight: 0;
-  font-size: 0rem;
-  line-height: 0%;
-  border-radius: 0rem;
-  width: 0rem;
-  height: 0rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
 }
 
 * {
@@ -118,7 +110,6 @@ p {
   color: var(--primary-color);
   font-size: 1.4rem;
   font-style: normal;
-  font-weight: 500;
   line-height: 150%;
   text-align: left;
   margin-left: 1.5rem;
