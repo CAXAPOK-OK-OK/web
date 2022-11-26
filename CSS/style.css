@@ -6,7 +6,7 @@
   --primary-color2: #FFFFFF;
   background-color: #FFFFFF;
   box-sizing: border-box;
-  width: 37.5rem;
+  width: 100%;
 }
 
 * ::after,
@@ -54,7 +54,7 @@
   padding-right: 3.71em;
 }
 
-button {
+#button {
   color: var(--primary-color2);
   font-weight: 600;
   font-size: 1.8rem;
