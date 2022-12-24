@@ -30,6 +30,7 @@
 .class-color2 {
   background-color: var(--primary-color4);
   padding-top: 10rem;
+  padding-bottom: 8rem;
 }
 
 .Testimonials {
@@ -332,7 +333,7 @@ header {
 
 .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 5rem;
 }
 
@@ -345,6 +346,133 @@ header {
 
 #follow {
   margin-bottom: 1rem;
+}
+
+.form-start{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  line-height: 167%;
+  padding: 3.5rem;
+  align-items: stretch;
+  max-width: 62rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+input[type="submit"],
+button {
+  margin-top: 1em;
+  margin-right: 2em;
+  transition: transform 1s, background-color 0.5s;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: tomato;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+button:disabled {
+  transform: initial;
+  background-color: lightgray;
+}
+
+.form-start input[type=text], input[type=date], input[type=password], input[type=email], input[type=tel]{
+  background-color: var(--primary-color6);
+  display: block;
+  min-width: 25rem;
+  min-height: 6rem;
+  border-radius: 5rem;
+  padding-left: 1.81em;
+  margin-bottom: 1.5rem;
+  max-width: 62rem;
+}
+
+.form-button{
+  color: var(--primary-color2);
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  border: 0;
+  width: 100%;
+  background-color: var(--primary-color7);
+  max-width: 34.5rem;
+  min-width: 15.7em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: list-item;
+  padding-bottom: 1.6rem;
+  padding-top: 1.5rem;
+  line-height: 2.1rem;
+  margin-top: 2rem;
+}
+
+label{
+  font-size: 2rem;
+  margin: 0.5rem;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.form-p
+{
+  font-size: 2.5rem;
+  margin: 0.5rem;
+}
+
+legend{
+  font-size: 2.5rem;
+  margin: 0.5rem;
+}
+
+
+input:hover {
+  background-color: var(--primary-color9);
+}
+
+::placeholder {
+  color: var(--primary-color7);
+}
+
+blockquote{
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.08rem;
+  text-align: center;
+  /* padding: 0 3.4rem; */
+  margin: 0rem auto 0rem auto;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active{
+  transform: scale(2.9);
+}
+
+::selection{
+  background-color: rgba(137, 43, 226, 0.445);
+  color: aliceblue;
+}
+
+fieldset {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+fieldset label{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 1.5rem;
+}
+
+input{
+  margin-right: 1rem;
 }
 
 .header {
@@ -416,9 +544,9 @@ header {
 
 .radio {
   margin:0 auto;
-  min-width: 5rem;
+  width: 5rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 footer img{
@@ -437,6 +565,12 @@ footer img{
 }
 .head-button{
 display: none;
+}
+
+.inp1{
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
 }
 
 html, body { height: 100%;}
@@ -459,6 +593,15 @@ top: 100vh;
     width: 58%;
     padding: 0;
   }
+
+  .li-right{
+    
+margin-left: 10rem;
+  }
+
+.li-left{
+  margin-right: 10rem;
+}
 
 .warning {
   display: none;
@@ -751,130 +894,327 @@ padding: 0;
   }
 }
 
-.form-start{
-  display: flex;
-  flex-direction: column;
-  font-size: 1.8rem;
-  line-height: 167%;
-  padding: 3.5rem;
-  align-items: stretch;
-  max-width: 62rem;
-  margin: 0 auto;
-  text-align: left;
+@media (min-width: 1300px) {
+  header {
+    min-height: 9rem;
+    /* justify-content: space-between; */
+    margin-left: 2.4rem;
+    /* max-width: 100rem; */
+  }
+  
+  .img-header{
+    /* min-width: 26.0rem; */
+    /* margin-left: 25rem; */
+    width: 163%;
+    padding: 0;
+  }
+
+  .li-right{
+    
+margin-left: 10rem;
+  }
+
+.li-left{
+  margin-right: 10rem;
 }
 
-input[type="submit"],
-button {
-  margin-top: 1em;
-  margin-right: 2em;
-  transition: transform 1s, background-color 0.5s;
+.warning {
+  display: none;
 }
 
-input[type="submit"]:hover,
-button:hover {
-  background-color: tomato;
-  transform: scale(1.2);
-  cursor: pointer;
+  h1 {
+    font-size: 6.6rem;
+    font-weight: 500;
+    line-height: 7.9rem;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+
+  p{
+    font-size: 2rem;
+  }
+
+  .volunteers {
+    padding-left: 10rem;
+    padding-right: 5.9rem;
+    margin: 1.9rem 0 1.9rem 0;
+    justify-content: start;
+  }
+
+  .volun {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .learn-button
+  {
+    color: var(--primary-color1);
+    font-weight: 600;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    border: 0;
+    padding-left: 4.95rem;
+    padding-right: 4.95rem;
+    background-color: var(--primary-color9);
+    margin-right: 24rem;
+    text-align: center;
+    display: list-item;
+    padding-bottom: 1.6rem;
+    padding-top: 1.5rem;
+    line-height: 2.1rem;
+    list-style-type: none;
+    width: auto;
+  }
+
+  .img-volunteers {
+    /* margin-right: 16.56rem; */
+    /* margin-bottom: 4.5rem; */
+    width: 95%;
+  }
+
+  #id-make-magical {
+    font-size: 2.9rem;
+    line-height: 130%;
+    margin: 0;
+  }
+
+  .mathpoolis {
+    /* font-size: 2rem; */
+    font-weight: 500;
+    line-height: 3rem;
+    text-align: left;
+    max-width: 60.6rem;
+    margin-left: 0;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 24.2rem 5rem 24.8rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    line-height: 6.76rem;
+    text-align: start;
+    min-width: 50.9rem;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  .class-center {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 3.6rem;
+    text-align: center;
+    padding: 0;
+    margin: 4rem auto 2rem auto;
+  }
+
+  .class-david {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+    text-align: center;
+  }
+
+  #david-2 {
+    margin: 0.5rem auto 3rem auto;
+  }
+
+
+  .lead1 {
+    display: flex;
+    width: 58.9rem;
+    padding: 0;
+    justify-content: start;
+    margin-top: 14.36rem;
+    flex-direction: column;
+  }
+
+  .header{
+    display: flex;
+  }
+
+  #button {
+    line-height: 2.1rem;
+    text-align: left;
+    margin: 0;
+    max-width: 28.4rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .head-button{
+    color: var(--primary-color2);
+    font-weight: 600;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    border: 0;
+    padding-left: 4.2rem;
+    padding-right: 4.2rem;
+    background-color: var(--primary-color8);
+    margin-right: 5.4rem;
+    text-align: center;
+    display: list-item;
+    padding-bottom: 1.6rem;
+    padding-top: 1.5rem;
+    line-height: 2.1rem;
+    box-shadow: 0.5rem 0.5rem 3rem 0.5rem #dddddd;
+    }
+
+  .lead {
+    text-align: left;
+    font-size: 5.2rem;
+    line-height: 6.76rem;
+  }
+
+  .final-text{
+    max-width: 30.8rem;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .icon li{
+
+width: 78%;
+
 }
 
-button:disabled {
-  transform: initial;
-  background-color: lightgray;
-}
-
-.form-start input[type=text], input[type=date], input[type=password], input[type=email], input[type=tel]{
-  background-color: var(--primary-color6);
-  display: block;
-  min-width: 25rem;
-  min-height: 6rem;
-  border-radius: 5rem;
-  padding-left: 1.81em;
+.Testimonials{
+  text-align: center;
+  /* font-size: 4rem; */
   margin-bottom: 1.5rem;
-  max-width: 62rem;
+  margin-top: 1.5rem;
 }
 
-.form-button{
-  color: var(--primary-color2);
-  font-weight: 600;
-  font-size: 1.8rem;
-  border-radius: 0.5rem;
-  border: 0;
-  width: 100%;
-  background-color: var(--primary-color7);
-  max-width: 34.5rem;
-  min-width: 15.7em;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  display: list-item;
-  padding-bottom: 1.6rem;
-  padding-top: 1.5rem;
-  line-height: 2.1rem;
-  margin-top: 2rem;
+  .icon{  
+justify-content: flex-start;
+padding: 0;
+  }
+
+  #follow{
+  text-align: start;
+  margin-left: 0;
+  }
+
+  .foot1{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foot-big{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .foot2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .imgdiv{
+    margin: 0;
+  }
+  .foot-img{
+    width: 101%;
+    margin-left: 0;
+    margin-top: 3.9rem;
+  }
+
+  .img-host{
+    width: 100%;
+    display: flex;
+  }
+
+  .img-lead{
+    margin: 0;
+    width: 100%;
+  }
+
+  .img2 {
+    width: 929px;
+    height: 1017px;
+  }
+
+  .img-run{
+    width: 100%;
+  }
+
+  .leadpc {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .classpc {
+    /* margin-left: 24.5rem; */
+    /* margin-right: 10.7rem; */
+    /* margin-top: 14.6rem; */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .classroom {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin: 10rem 0 10rem 0;
+  }
+
+  #run{
+    text-align: left;
+    font-size: 5.2rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    line-height: 6.76rem;
+    min-width: 51.2rem;
+    margin: 0;
+  }
+
+  #lead-virtual{
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 45.8rem;
+    margin-left: 5rem;
+  }
+
+  .fest {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 23.9rem;
+  }
+
+  .math-p{
+    min-width: 45.9rem;
+    margin: 0;
+    margin-bottom: 6rem;
+  }
+  
+  .festpc{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
 }
 
-label{
-  font-size: 2rem;
-  margin: 0.5rem;
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
-}
 
-.form-p
-{
-  font-size: 2.5rem;
-  margin: 0.5rem;
-}
-
-legend{
-  font-size: 2.5rem;
-  margin: 0.5rem;
-}
-
-
-input:hover {
-  background-color: var(--primary-color9);
-}
-
-::placeholder {
-  color: var(--primary-color7);
-}
-
-blockquote{
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 2.08rem;
-  text-align: center;
-
-  padding: 0 3.4rem;
-  margin: 5rem auto 3rem auto;
-}
-
-button:hover {
-  transform: scale(1.1);
-}
-
-button:active{
-  transform: scale(2.9);
-}
-
-::selection{
-  background-color: rgba(137, 43, 226, 0.445);
-  color: aliceblue;
-}
-
-fieldset {
-  display: flex;
-  /* flex-direction: column; */
-}
-
-fieldset label{
-  display: flex;
-  flex-direction: row-reverse;
-  margin-right: 1.5rem;
-}
-
-input{
-  margin-right: 1rem;
-}
