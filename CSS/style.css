@@ -905,7 +905,7 @@ padding: 0;
   .img-header{
     /* min-width: 26.0rem; */
     /* margin-left: 25rem; */
-    width: 49%;
+    width: 47%;
     padding: 0;
   }
 
@@ -1002,10 +1002,10 @@ margin-left: 10rem;
     font-weight: 600;
     letter-spacing: 0.15rem;
     line-height: 6.76rem;
-    text-align: start;
-    min-width: 50.9rem;
-    margin-left: 0;
-    margin-bottom: 2rem;
+    /* text-align: start; */
+    /* min-width: 50.9rem; */
+    /* margin-left: 0; */
+    /* margin-bottom: 2rem; */
   }
 
   .class-center {
